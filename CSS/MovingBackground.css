@@ -1,0 +1,45 @@
+/* Allgemeine Stile */
+body {
+  background-color: white;
+  color: black;
+  font-size: 18px; /* Schrift gross */
+  font-family: Arial, sans-serif;
+}
+
+/* Taschenrechner Hintergrund */
+#taschenrechner {
+  background-color: grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Buttons */
+button {
+  background-color: rgb(255, 187, 0);
+  color: black;
+  border: none;
+  border-radius: 50%; /* Rund */
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Kontrast verbessern bei Hover */
+button:hover {
+  background-color: rgb(255, 136, 0);
+  color: black;
+}
+
+/* Kontraste allgemein */
+p, h1, h2, h3, h4, h5, h6 {
+  color: black;
+}
+
+/* Zusätzliche Stile für Eingabefelder */
+input {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}

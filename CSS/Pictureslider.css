@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+header nav {
+  display: inline-block;
+}
+
+header h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+#imageTrack {
+  display: flex;
+  width: calc(600px * 8); /* Total width to accommodate 8 images */
+  height: 70vh; /* Adjusts the container height */
+  overflow: hidden;
+  position: relative;
+  cursor: grab;
+}
+
+#imageTrack img {
+  height: 100%; /* Makes images fill the container vertically */
+  width: 20%; /* Keeps image aspect ratio intact */
+  flex-shrink: 0; /* Prevents images from shrinking */
+  margin-right: 20px; /* Adds spacing between images */
+  transition: transform 1.5s ease; /* Smooth transition for animation */
+  will-change: transform; /* Ensures better animation performance */
+}
+
+/* Add the scaling effect */
+.scaled {
+  transform: scale(1.2); /* Image scales up when in center */
+}
+
+#imageTrack:active {
+  cursor: grabbing;
+}
